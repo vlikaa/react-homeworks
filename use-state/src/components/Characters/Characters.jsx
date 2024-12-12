@@ -1,4 +1,5 @@
 ﻿import Character from "./Character/Character";
+import "./Characters.css";
 
 const Characters = ({charactersData}) => {
 	return (
@@ -6,12 +7,12 @@ const Characters = ({charactersData}) => {
 			{
 				charactersData.map(character => (
 					<li>
-						<Character characterData={character} />
+						<Character characterData={character}/>
 					</li>
 				))
 			}
 		</ul>
 	);
-}
+};
 
 export default Characters;
